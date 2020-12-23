@@ -1,23 +1,11 @@
-edu/itsligo/simongame/HighScores.java
- edu.itsligo.simongame.HighScores
-edu/itsligo/simongame/HighScore.java
- edu.itsligo.simongame.HighScore
-edu/itsligo/simongame/GetterSetter.java
- edu.itsligo.simongame.GetterSetter
-edu/itsligo/simongame/DatabaseHandler.java
- edu.itsligo.simongame.DatabaseHandler
-edu/itsligo/simongame/BuildConfig.java
- edu.itsligo.simongame.BuildConfig
-edu/itsligo/simongame/GameOver.java
- edu.itsligo.simongame.GameOver
-edu/itsligo/simongame/StartScreen.java
- edu.itsligo.simongame.StartScreen
 edu/itsligo/simongame/GameScreen.java
  edu.itsligo.simongame.GameScreen
  edu.itsligo.simongame.GameScreen$1
  edu.itsligo.simongame.GameScreen$2
  edu.itsligo.simongame.GameScreen$3
  edu.itsligo.simongame.GameScreen$4
+edu/itsligo/simongame/HighScore.java
+ edu.itsligo.simongame.HighScore
 edu/itsligo/simongame/MainActivity.java
  edu.itsligo.simongame.MainActivity
  edu.itsligo.simongame.MainActivity$1
@@ -25,3 +13,13 @@ edu/itsligo/simongame/MainActivity.java
  edu.itsligo.simongame.MainActivity$3
  edu.itsligo.simongame.MainActivity$4
  edu.itsligo.simongame.MainActivity$4$1
+edu/itsligo/simongame/DatabaseHandler.java
+ edu.itsligo.simongame.DatabaseHandler
+edu/itsligo/simongame/BuildConfig.java
+ edu.itsligo.simongame.BuildConfig
+edu/itsligo/simongame/GetterSetter.java
+ edu.itsligo.simongame.GetterSetter
+edu/itsligo/simongame/GameOver.java
+ edu.itsligo.simongame.GameOver
+edu/itsligo/simongame/HighScores.java
+ edu.itsligo.simongame.HighScores

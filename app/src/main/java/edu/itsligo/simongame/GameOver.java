@@ -24,13 +24,10 @@ public class GameOver extends AppCompatActivity {
         editor = sharedPreferences.edit();
 
         int s = sharedPreferences.getInt("score",0);
-        playerName = findViewById(R.id.playerName);
+        playerName = findViewById(R.id.userNameEd);
 
         score = findViewById(R.id.score);
         score.setText(String.valueOf(s));
-
-
-
 
         editor.putInt("score",0);
         editor.commit();

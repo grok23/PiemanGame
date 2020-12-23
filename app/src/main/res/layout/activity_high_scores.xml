@@ -15,23 +15,12 @@
         android:layout_height="match_parent">
 
 
-        <EditText
-            android:id="@+id/userNameEd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Enter your name for the high score table"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.407"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/scoreBoard"
-            app:layout_constraintVertical_bias="0.448" />
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simon "
+            android:textColor="@color/White"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,6 +35,7 @@
             android:layout_height="57dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/ic_start"
+            android:backgroundTint="@color/White"
             android:onClick="doStart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,12 +46,14 @@
             android:id="@+id/scoreBoard"
             android:layout_width="400dp"
             android:layout_height="250dp"
+            android:cacheColorHint="@color/White"
+            android:textColor="@color/White"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.367" />
+            app:layout_constraintVertical_bias="0.376" />
 
         <TextView
             android:id="@+id/tvHighScores"
@@ -69,6 +61,7 @@
             android:layout_height="29dp"
             android:layout_marginTop="8dp"
             android:text="Top 5 High Scores"
+            android:textColor="@color/White"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/scoreBoard"
             app:layout_constraintEnd_toEndOf="parent"
@@ -83,6 +76,7 @@
             android:layout_height="40dp"
             android:layout_marginEnd="4dp"
             android:text="Replay"
+            android:textColor="@color/White"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton"

@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,7 +18,6 @@ import java.util.Locale;
 
 public class HighScores extends AppCompatActivity {
     ListView topfive;
-    private EditText userName;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
 
@@ -31,7 +29,6 @@ public class HighScores extends AppCompatActivity {
 
         setContentView(R.layout.activity_high_scores);
 
-        userName = findViewById(R.id.userNameEd);
         topfive = findViewById(R.id.scoreBoard);
         DatabaseHandler db = new DatabaseHandler(this);
 
@@ -76,7 +73,7 @@ public class HighScores extends AppCompatActivity {
 
         // Reading all scores
         Log.i("Reading: ", "Reading all scores..");
-        List<HighScore> hiScores = db.getAllHiScores();
+        List<HighScore> hiScores = db.getAllHighScores();
 
 
         for (HighScore hs : hiScores) {
@@ -160,18 +157,8 @@ public class HighScores extends AppCompatActivity {
     }
 
     public void doStart(View view) {
-
-        if (!userName.getText().toString().trim().isEmpty()) {
-
-            editor.putString("player_name", userName.getText().toString().trim());
-            editor.commit();
-            //  sharedPreferences.edit().apply();
-            // sharedPreferences.edit().commit();
             Intent intent = new Intent(view.getContext(), MainActivity.class);
             startActivity(intent);
-        } else {
-            Toast.makeText(this, "Please enter a User Name", Toast.LENGTH_SHORT).show();
-        }
     }
 
     // add name

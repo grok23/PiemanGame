@@ -32,13 +32,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Creating Tables
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_HISCORES_TABLE = "CREATE TABLE " + TABLE_HIGH_SCORES + "(" +
+        String CREATE_HIGHSCORES_TABLE = "CREATE TABLE " + TABLE_HIGH_SCORES + "(" +
                 KEY_SCORE_ID + " INTEGER PRIMARY KEY," +
                 KEY_GAME_DATE + " TEXT NOT NULL," +
                 KEY_PLAYER_NAME + " TEXT NOT NULL," +
                 KEY_SCORE + " INTEGER NOT NULL" +
                 ")";
-        db.execSQL(CREATE_HISCORES_TABLE);
+        db.execSQL(CREATE_HIGHSCORES_TABLE);
     }
 
     // Upgrading database
@@ -102,7 +102,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     // code to get all hiScores in a list view
-    public List<HighScore> getAllHiScores() {
+    public List<HighScore> getAllHighScores() {
         List<HighScore> hiScoreList = new ArrayList<HighScore>();
         // Select All Query
         String selectQuery = "SELECT  * FROM " + TABLE_HIGH_SCORES;
