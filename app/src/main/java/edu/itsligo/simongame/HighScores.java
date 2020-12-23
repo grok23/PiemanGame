@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -152,7 +153,7 @@ public class HighScores extends AppCompatActivity {
         }
 
         ArrayAdapter<String> itemsAdapter =
-                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, scoresStr);
+                new ArrayAdapter<>(this, R.layout.rows, scoresStr);
         topfive.setAdapter(itemsAdapter);
     }
 

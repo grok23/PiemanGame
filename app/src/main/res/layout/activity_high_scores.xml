@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@color/DarkGray"
+    android:background="@color/Black"
     tools:context=".HighScores">
 
     <androidx.constraintlayout.widget.ConstraintLayout

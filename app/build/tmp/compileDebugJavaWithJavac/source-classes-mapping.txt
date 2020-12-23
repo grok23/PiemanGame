@@ -17,9 +17,9 @@ edu/itsligo/simongame/DatabaseHandler.java
  edu.itsligo.simongame.DatabaseHandler
 edu/itsligo/simongame/BuildConfig.java
  edu.itsligo.simongame.BuildConfig
-edu/itsligo/simongame/GetterSetter.java
- edu.itsligo.simongame.GetterSetter
 edu/itsligo/simongame/GameOver.java
  edu.itsligo.simongame.GameOver
+edu/itsligo/simongame/GetterSetter.java
+ edu.itsligo.simongame.GetterSetter
 edu/itsligo/simongame/HighScores.java
  edu.itsligo.simongame.HighScores
