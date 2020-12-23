@@ -1,15 +1,14 @@
 package edu.itsligo.simongame;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -43,7 +42,7 @@ public class HighScores extends AppCompatActivity {
         if (s != 0) {
 
             String date = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
-            db.addHiScore(new HighScore(date,
+            db.addHighScore(new HighScore(date,
                     sharedPreferences.getString("player_name", ""),
                     s));
 
@@ -62,14 +61,14 @@ public class HighScores extends AppCompatActivity {
 //
 //         Inserting hi scores
 //        Log.i("Insert: ", "Inserting ..");
-//        db.addHiScore(new HiScore("20 OCT 2020", "Frodo", 0));
-//        db.addHiScore(new HiScore("28 OCT 2020", "Dobby", 1));
-//        db.addHiScore(new HiScore("20 NOV 2020", "DarthV", 3));
-//        db.addHiScore(new HiScore("20 NOV 2020", "Bob", 2));
-//        db.addHiScore(new HiScore("22 NOV 2020", "Gemma", 1));
-//        db.addHiScore(new HiScore("30 NOV 2020", "Joe", 0));
-//        db.addHiScore(new HiScore("01 DEC 2020", "DarthV", 0));
-//        db.addHiScore(new HiScore("02 DEC 2020", "Gandalf", 0));
+//        db.addHighScore(new HiScore("20 OCT 2020", "Frodo", 0));
+//        db.addHighScore(new HiScore("28 OCT 2020", "Dobby", 1));
+//        db.addHighScore(new HiScore("20 NOV 2020", "DarthV", 3));
+//        db.addHighScore(new HiScore("20 NOV 2020", "Bob", 2));
+//        db.addHighScore(new HiScore("22 NOV 2020", "Gemma", 1));
+//        db.addHighScore(new HiScore("30 NOV 2020", "Joe", 0));
+//        db.addHighScore(new HiScore("01 DEC 2020", "DarthV", 0));
+//        db.addHighScore(new HiScore("02 DEC 2020", "Gandalf", 0));
 //
 
         // Reading all scores
@@ -119,7 +118,7 @@ public class HighScores extends AppCompatActivity {
         int myCurrentScore = 40;
         // if 5th highest score < myCurrentScore, then insert new score
 //        if (highScore.getScore() < myCurrentScore) {
-//            db.addHiScore(new HiScore("08 DEC 2020", "Elrond", 11));
+//            db.addHighScore(new HiScore("08 DEC 2020", "Elrond", 11));
 //        }
 
         Log.i("divider", "====================");

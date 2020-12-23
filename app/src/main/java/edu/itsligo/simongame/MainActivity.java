@@ -1,8 +1,5 @@
 package edu.itsligo.simongame;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,6 +11,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             sequenceCount=data.getIntExtra("seq",4);
             level.setText(String.valueOf(data.getIntExtra("level",1)));
             if (data.getStringExtra("Result").equals("S")){
-                Toast.makeText(this, "Congratulations!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Well Done", Toast.LENGTH_SHORT).show();
                 handler.postDelayed(runnable,1500);
             }
             else {

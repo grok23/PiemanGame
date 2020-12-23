@@ -1,12 +1,13 @@
 package edu.itsligo.simongame;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class GameOver extends AppCompatActivity {
 
@@ -34,18 +35,15 @@ public class GameOver extends AppCompatActivity {
     }
 
     public void doReplay(View view) {
-
         Intent i = new Intent(GameOver.this, MainActivity.class);
         startActivity(i);
     }
 
     public void doHighScore(View view) {
 
-
         editor.putString("playerName", playerName.getText().toString());
         int s = sharedPreferences.getInt("score", 0);
         editor.commit();
-
         Intent i = new Intent(GameOver.this, HighScores.class);
         i.putExtra("score",s);
 

@@ -1,7 +1,5 @@
 package edu.itsligo.simongame;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.IntentCompat;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,12 +8,13 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -66,7 +65,7 @@ public class GameScreen extends AppCompatActivity implements SensorEventListener
                 clicked++;
                 if (clicked >= gameSequence.size()) {
                     if (clickedSequence.equals(gameSequence)) {
-                        Toast.makeText(getApplicationContext(), "Matched", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(), "Well Done", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent();
                         intent.putExtra("Result", "S");
                         intent.putExtra("seq", gameSequence.size() + 2);
@@ -102,7 +101,7 @@ public class GameScreen extends AppCompatActivity implements SensorEventListener
                 clicked++;
                 if (clicked >= gameSequence.size()) {
                     if (clickedSequence.equals(gameSequence)) {
-                        Toast.makeText(getApplicationContext(), "Matched", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(), "Well Done", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent();
                         intent.putExtra("Result", "S");
                         intent.putExtra("seq", gameSequence.size() + 2);
@@ -138,7 +137,7 @@ public class GameScreen extends AppCompatActivity implements SensorEventListener
                 clicked++;
                 if (clicked >= gameSequence.size()) {
                     if (clickedSequence.equals(gameSequence)) {
-                        Toast.makeText(getApplicationContext(), "Matched", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(), "Well Done", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent();
                         intent.putExtra("Result", "S");
                         intent.putExtra("seq", gameSequence.size() + 2);
@@ -175,7 +174,7 @@ public class GameScreen extends AppCompatActivity implements SensorEventListener
                 if (clicked >= gameSequence.size()) {
 
                     if (clickedSequence.equals(gameSequence)) {
-                        Toast.makeText(getApplicationContext(), "Matched", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(), "Well Done", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent();
                         intent.putExtra("Result", "S");
                         intent.putExtra("seq", gameSequence.size() + 2);
