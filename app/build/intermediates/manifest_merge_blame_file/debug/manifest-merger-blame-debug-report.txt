@@ -1,0 +1,69 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.itsligo.simongame"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:5:5-28:19
+12        android:allowBackup="true"
+12-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.3.1] C:\Users\Alasdair\.gradle\caches\transforms-2\files-2.1\c560b8721f05ca12656603dd382025ab\core-1.3.1\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/Theme.SimonGame" >
+21-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:11:9-47
+22        <activity
+22-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:12:9-95
+23            android:name="edu.itsligo.simongame.GameScreen"
+23-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:12:19-45
+24            android:screenOrientation="landscape" />
+24-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:12:46-83
+25        <activity
+25-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:13:9-15:53
+26            android:name="edu.itsligo.simongame.HighScores"
+26-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:14:13-39
+27            android:screenOrientation="landscape" />
+27-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:15:13-50
+28        <activity
+28-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:16:9-18:53
+29            android:name="edu.itsligo.simongame.GameOver"
+29-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:17:13-37
+30            android:screenOrientation="landscape" />
+30-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:18:13-50
+31        <activity
+31-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:19:9-27:20
+32            android:name="edu.itsligo.simongame.MainActivity"
+32-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:20:13-41
+33            android:screenOrientation="landscape" >
+33-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:21:13-50
+34            <intent-filter>
+34-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:22:13-26:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:23:17-69
+35-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:23:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:25:17-77
+37-->C:\Users\Alasdair\AndroidStudioProjects\PiemanGame\app\src\main\AndroidManifest.xml:25:27-74
+38            </intent-filter>
+39        </activity>
+40    </application>
+41
+42</manifest>
